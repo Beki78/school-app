@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dangrek,sans-serif;
+}
+.h1{
+    font-family: Poppins,sans-serif;
+}
+.active{
+    color: rgb(0, 0, 104);
+    border-radius: 40%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.598);
+}
