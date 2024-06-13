@@ -24,34 +24,30 @@ const Achievements = () => {
   return (
     <div>
       <NavBar />
-      
-        <h1 className="text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
-          Achievements
-        </h1>
-        <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
 
-        <div className="mx-auto px-40 my-14 ">
-          {news.map((data, index) => (
-            <div className="shadow-lg shadow-[#BFD7ED] rounded-md p-5 bg-slate-100 hover:bg-slate-200 my-14">
-              <img
-                src={data.image}
-                className="w-full h-full rounded-md"
-                alt=""
-              />
-              <h1 className="text-3xl font-[Poppins] font-semibold  pt-3 ">
-                {data.title}
-              </h1>
-              <p className="focus-desc pt-3 font-[Poppins] text-sm">
-                {data.disc}
-              </p>
-              <p className="focus-desc font-[Poppins] font-light italic text-sm">
-                {data.date}
-              </p>
-            </div>
-          ))}
-        </div>
-        <Footer />
+      <h1 className="text-2xl sm:text-3xl lg:text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
+        Achievements
+      </h1>
+      <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
+
+      <div className="mx-auto px-5 lg:px-40 my-14 ">
+        {news.map((data, index) => (
+          <div className="shadow-lg shadow-[#BFD7ED] rounded-md p-5 bg-slate-100 hover:bg-slate-200 my-14">
+            <img src={data.image} className="w-full h-full rounded-md" alt="" />
+            <h1 className="text-xl md:text-3xl font-[Poppins] font-semibold  pt-3 ">
+              {data.title}
+            </h1>
+            <p className="focus-desc pt-3 font-[Poppins] text-sm">
+              {data.disc}
+            </p>
+            <p className="focus-desc font-[Poppins] font-light italic text-sm">
+              {data.date}
+            </p>
+          </div>
+        ))}
       </div>
+      <Footer />
+    </div>
   );
 }
 

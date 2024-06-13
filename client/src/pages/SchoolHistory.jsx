@@ -9,14 +9,14 @@ const SchoolHistory = () => {
       <NavBar />
       <div className="bg-[#f1f7ff]">
         <div className="p-12 px-5 md:px-32 mx-auto">
-          <h1 className="text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
             More About Kidane Mehret School
           </h1>
           <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
 
-          <div className="flex flex-col items-center mt-16 sm:flex-row gap-10 text-start px-4 md:px-1">
+          <div className="flex flex-col items-center mt-16 lg:flex-row gap-10 text-start px-4 md:px-1">
             <img src={Photot} alt="kms logo" className="w-96 object-cover" />
-            <p className="font-[poppins]">
+            <p className="font-[poppins] text-sm  md:text-md ">
               Kidane Meheret School KMS was founded by the Franciscan Sisters of
               the Heart of Jesus on November 1st 1957. It is a school of the
               Ethiopian Catholic Church and located in Kebena, Addis Ababa. The
@@ -40,7 +40,7 @@ const SchoolHistory = () => {
       </div>
 
       <div className="  pt-20">
-        <div className="flex gap-5 md:gap-7 p-10  px-20 md:px-60">
+        <div className="flex gap-5 md:gap-7 p-10  px-20 lg:px-60">
           <h1 className="text-3xl text-[#003B73]">Mission</h1>
           <p className="font-[poppins] text-sm text-[#003B73]">
             ach year, many from LCCS secure positions in prestigious
@@ -49,7 +49,7 @@ const SchoolHistory = () => {
           </p>
         </div>
         <hr className="border-t-[1px] border-[#003B73] mt-4 mb-10 mx-20" />
-        <div className="flex gap-5 md:gap-10 p-10  px-20 md:px-60">
+        <div className="flex gap-5 md:gap-10 p-10  px-20 lg:px-60">
           <h1 className="text-3xl  text-[#003B73]">Vision</h1>
           <p className="font-[poppins] text-sm  text-[#003B73]">
             ach year, many from LCCS secure positions in prestigious
@@ -59,7 +59,7 @@ const SchoolHistory = () => {
         </div>
         <hr className="border-t-[1px] border-[#003B73] mt-4 mb-10 mx-20" />
 
-        <div className="flex gap-5 md:gap-7 p-10  px-20 md:px-60">
+        <div className="flex gap-5 md:gap-7 p-10  px-20 lg:px-60">
           <h1 className="text-3xl text-[#003B73]">Core Values</h1>
           <p className="font-[poppins] text-sm text-[#003B73]">
             ach year, many from LCCS secure positions in prestigious
@@ -68,7 +68,7 @@ const SchoolHistory = () => {
           </p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

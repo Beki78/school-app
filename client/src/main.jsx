@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import Error from "./pages/Error.jsx";
 import Admission from "./pages/Admission.jsx";
 import Facilities from "./pages/Facilities.jsx";
-import Event from "./pages/Event.jsx";
+import Admin from "./pages/Admin.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Activity from "./pages/Activity.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
     element: <Facilities />,
   },
   {
-    path: "/events",
-    element: <Event />,
+    path: "/admin",
+    element: <Admin />,
   },
   {
     path: "/newsletter",
@@ -86,7 +86,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cultureday-2022",
-    element: <CultureDay2022/>
+    element: <CultureDay2022 />,
   },
 ]);
 

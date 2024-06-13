@@ -20,7 +20,9 @@ const Form = () => {
     gender,
     setGender,
     grade,
-    setGrade
+    setGrade,
+    age,
+    setAge,
   } = useContext(MyProvider);
   return (
     <>
@@ -88,7 +90,7 @@ const Form = () => {
                 <div className="mt-2">
                   <input
                     type="text"
-                    name="guardian-namefirst-name"
+                    name="guardian-first-name"
                     id="guardian-name"
                     autoComplete="given-name"
                     required
@@ -110,7 +112,7 @@ const Form = () => {
                     type="text"
                     name="guardian-family-name"
                     id="guardian-family-name"
-                    autoComplete="guardian-family-name"
+                    autoComplete="given-name"
                     required
                     value={guardianFirstName}
                     onChange={(e) => setGuardianFirstName(e.target.value)}

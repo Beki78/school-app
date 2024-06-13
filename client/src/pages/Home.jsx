@@ -51,12 +51,12 @@ const Home = () => {
       <NavBar />
       <Caurosel />
       <div className="font-[Poppins]">
-        <h1 className="text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
+        <h1 className="text-2xl sm:text-3xl lg:text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
           Welcome To Kidane Mehret School
         </h1>
         <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
 
-        <p className="mt-16 mx-auto px-48 leading-6">
+        <p className="mt-16 mx-auto px-7 md:px-20 lg:px-48 leading-6 text-sm sm:text-md lg:text-lg">
           Lideta Catholic Cathedral School (LCCS) stands as one of Ethiopia’s
           most esteemed educational institutions. At LCCS, we uphold the
           conviction that every individual merits an environment that fosters
@@ -71,14 +71,17 @@ const Home = () => {
           Cambridge, among others.
         </p>
         <div className="flex justify-center mt-7">
-          <Link to="/about-kms" className="bg-[#60A3D9]  text-[#003B73] py-2 px-4 rounded-md duration-300 ease-in-out hover:bg-[#407daf]">
+          <Link
+            to="/about-kms"
+            className="bg-[#60A3D9]  text-[#003B73] py-2 px-4 rounded-md duration-300 ease-in-out hover:bg-[#407daf]"
+          >
             Read More
           </Link>
         </div>
       </div>
       <HeaderSection />
       <div>
-        <h1 className="text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
+        <h1 className="text-2xl sm:text-3xl lg:text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
           Our focus
         </h1>
         <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
@@ -94,7 +97,9 @@ const Home = () => {
                 alt=""
                 className="focus-image h-56 w-full object-cover hover:opacity-75 duration-150 ease-in-out rounded-lg"
               />
-              <h1 className="text-3xl font-[Poppins] font-semibold  pt-3 ">{data.title}</h1>
+              <h1 className="text-3xl font-[Poppins] font-semibold  pt-3 ">
+                {data.title}
+              </h1>
               <p className="focus-desc pt-3 font-[Poppins] text-sm">
                 {data.disc}
               </p>

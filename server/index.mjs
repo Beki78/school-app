@@ -2,11 +2,13 @@ import express from "express"
 import dotenv from "dotenv"
 import mongoose from "mongoose"
 import Form from "./models/studentform.models.mjs"
+import cors from "cors"
 dotenv.config()
 
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 
 mongoose.connect(process.env.DB_URI)
 .then(()=>{
@@ -28,7 +30,7 @@ try {
       guardianFirstName,
       guardianLastName,
       phoneNo,
-      birthDate,
+      age,
       gender,
       gradeOfAdmission,
     } = req.body;
@@ -38,7 +40,7 @@ try {
       !guardianFirstName ||
       !guardianLastName ||
       !phoneNo ||
-      !birthDate ||
+      !age ||
       !gender ||
       !gradeOfAdmission
     ) {
@@ -50,7 +52,7 @@ try {
        guardianFirstName,
        guardianLastName,
        phoneNo,
-       birthDate,
+       age,
        gender,
        gradeOfAdmission,
      });
@@ -59,15 +61,14 @@ try {
 } catch (error) {
     res.status(500).json(error.message)
 }    
-})
+}) 
 
-app.get("/form" , async(req, res) => {
-    try {
-        const student = await Form.find({})
-        res.status(200).json(student)
-    } catch (error) {
-    res.status(500).json(error.message)
-        
-    }
-})
+app.get("/form", async (req, res) => {
+  try {
+    const students = await Form.find({}).sort({ createdAt: -1 }); // -1 for descending order
+    res.status(200).json(students);
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
+});
 

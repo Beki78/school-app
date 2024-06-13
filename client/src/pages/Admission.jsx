@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 import NavBar from "../components/NavBar";
-import Form from '../components/Form';
-import Footer from '../components/Footer';
-
+import Form from "../components/Form";
+import Footer from "../components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const images = [
   "https://media.istockphoto.com/id/675073328/vector/admission-concept-on-keyboard-button-3d-rendering.jpg?s=612x612&w=0&k=20&c=rsDToN9NseYiS5WEw48w6J_Ll4eWafgbeBwgml5Q254=",
@@ -12,6 +13,7 @@ const Admission = () => {
   return (
     <div>
       <NavBar />
+      <ToastContainer />
       <div>
         <h1 className="text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
           Admission
@@ -40,6 +42,6 @@ const Admission = () => {
       <Footer />
     </div>
   );
-}
+};
 
-export default Admission
+export default Admission;
