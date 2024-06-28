@@ -15,7 +15,7 @@ const CultureDay2022 = () => {
             key={index}
             src={image.url}
             alt=""
-            className="w-[20rem] bg-cover rounded-md hover:opacity-85 duration-150 ease-in-out "
+            className="w-[20rem] bg-cover rounded-md hover:opacity-85 duration-150 ease-in-out"
           />
         ))}
       </div>
