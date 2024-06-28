@@ -20,7 +20,7 @@ const Admission = () => {
         </h1>
         <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
 
-        <div className="flex gap-5 items-center  mx-auto px-48 mt-16">
+        <div className="flex flex-col lg:flex-row gap-5 items-center  mx-auto px-5 sm:px-12 md:px-14 lg:px-20 xl:px-32 mt-16">
           <p className=" leading-6">
             Lideta Catholic Cathedral School (LCCS) stands as one of Ethiopia’s
             most esteemed educational institutions. At LCCS, we uphold the

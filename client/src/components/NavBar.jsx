@@ -249,7 +249,7 @@ export default function NavBar() {
                   Gallery
                 </Link>
                 <Link
-                  to="/activity"
+                  to="/newsletter"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-[#214981]"
                 >
                   Newsletter

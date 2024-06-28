@@ -31,7 +31,10 @@ const Form = () => {
       </h1>
       <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
 
-      <form className="px-64 mx-auto" onSubmit={onSubmitHandler}>
+      <form
+        className="px-5 sm:px-12 md:px-14 lg:px-32 xl:px-64 mx-auto"
+        onSubmit={onSubmitHandler}
+      >
         <div className="space-y-12 bg-[#fafbfb] my-12 p-6 shadow-lg shadow-[#BFD7ED]">
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base font-semibold leading-7 text-gray-900">

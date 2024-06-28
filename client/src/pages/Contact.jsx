@@ -15,7 +15,7 @@ const Contact = () => {
     <div>
       <NavBar />
       <div className="isolate  px-6  lg:px-8 ">
-        <h1 className="text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
+        <h1 className="text-2xl sm:text-3xl lg:text-5xl text-center py-7 pt-20 font-[Dangrek] text-[#003B73]">
           Contact
         </h1>
         <hr className="border-t-[1px] rounded-lg mx-28 border-[#BFD7ED]" />
@@ -123,7 +123,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
