@@ -132,12 +132,12 @@ export default function NavBar() {
           >
             Admission
           </Link>
-          <Link
+          {/* <Link
             to="/facilities"
             className="text-sm font-semibold leading-6 text-white  hover:text-[#BFD7ED] hover:scale-x-125 transition- duration-300 ease-in-out"
           >
             Facilities
-          </Link>
+          </Link> */}
 
           <Link
             to="/gallery"
@@ -235,12 +235,12 @@ export default function NavBar() {
                 >
                   Admission
                 </Link>
-                <Link
+                {/* <Link
                   to="/facilities"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-[#214981]"
                 >
                   Facilities
-                </Link>
+                </Link> */}
 
                 <Link
                   to="/gallery"
